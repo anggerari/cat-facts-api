@@ -1,0 +1,33 @@
+{
+  "name": "rtx-test",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "rtx-test usage only",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon ./Server/index.js",
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
+    "coverage": "jest --coverage"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.1",
+    "cors": "^2.8.5",
+    "express": "^4.17.2",
+    "morgan": "^1.10.0",
+    "node-fetch": "^3.1.0",
+    "passport": "^0.5.2",
+    "pg": "^8.7.1"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "dotenv": "^14.1.0",
+    "jest": "^27.4.7",
+    "nodemon": "^2.0.15",
+    "supertest": "^6.2.1"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  }
+}
